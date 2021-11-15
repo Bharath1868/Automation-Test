@@ -35,7 +35,8 @@ public class AppTest
 	driver.quit();  
 	System.out.println("after test");  
 	}  */ 
-	public static void main(String[] args) {
+	@Test
+	public static void test() {
 		System.out.println("Hi....");
 	}
 }
