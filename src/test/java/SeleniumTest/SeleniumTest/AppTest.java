@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -37,6 +38,7 @@ public class AppTest
 	}  */ 
 	@Test
 	public static void test() {
+		Reporter.log("Test started--> "+ "verifyLoginPageTitleTest" +"\n" );
 		System.out.println("Hi....");
 	}
 }
