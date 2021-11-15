@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28618" started-at="2021-11-11T08:51:12Z" finished-at="2021-11-11T08:51:41Z">
+  <suite name="Default suite" duration-ms="57616" started-at="2021-11-12T12:28:29Z" finished-at="2021-11-12T12:29:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28618" started-at="2021-11-11T08:51:12Z" finished-at="2021-11-11T08:51:41Z">
+    <test name="Default test" duration-ms="57616" started-at="2021-11-12T12:28:29Z" finished-at="2021-11-12T12:29:27Z">
       <class name="SeleniumTest.SeleniumTest.App">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:SeleniumTest.SeleniumTest.App@1593948d]" name="beforeTest" is-config="true" duration-ms="40" started-at="2021-11-11T14:21:12Z" finished-at="2021-11-11T14:21:12Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:SeleniumTest.SeleniumTest.App@1593948d]" name="beforeTest" is-config="true" duration-ms="46" started-at="2021-11-12T17:58:29Z" finished-at="2021-11-12T17:58:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="test()[pri:0, instance:SeleniumTest.SeleniumTest.App@1593948d]" name="test" duration-ms="27119" started-at="2021-11-11T14:21:12Z" finished-at="2021-11-11T14:21:40Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:SeleniumTest.SeleniumTest.App@1593948d]" name="test" duration-ms="55910" started-at="2021-11-12T17:58:29Z" finished-at="2021-11-12T17:59:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:SeleniumTest.SeleniumTest.App@1593948d]" name="afterTest" is-config="true" duration-ms="1435" started-at="2021-11-11T14:21:40Z" finished-at="2021-11-11T14:21:41Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:SeleniumTest.SeleniumTest.App@1593948d]" name="afterTest" is-config="true" duration-ms="1609" started-at="2021-11-12T17:59:25Z" finished-at="2021-11-12T17:59:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

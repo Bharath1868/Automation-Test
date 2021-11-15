@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 
-public class App 
+public class App
 {
 	public String baseUrl = "https://www.javatpoint.com/";  
 	String driverPath = "resources\\chromedriver.exe";  
@@ -35,4 +35,7 @@ public class App
 	driver.quit();  
 	System.out.println("after test");  
 	}   
+	public static void main(String[] args) {
+		
+	}
 }
