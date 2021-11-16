@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 public class AppTest 
 {
    
-	@Test(enabled=true)           
+	@Test           
 	public void Test() {      
 	String baseUrl = "https://www.javatpoint.com/";  
 	String driverPath = "D:\TestGit\TestSelenium\TestSelenium\resources\chromedriver.exe";  
