@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 public class AppTest 
 {
-	public String baseUrl = "https://www.javatpoint.com/";  
+	/*public String baseUrl = "https://www.javatpoint.com/";  
 	String driverPath = "resources\\chromedriver.exe";  
 	public WebDriver driver ;   
 	@Test(enabled=true)           
@@ -35,9 +35,12 @@ public class AppTest
 	public void afterTest() {  
 	driver.quit();  
 	System.out.println("after test");  
-	}  
-	/*
+	} */ 
+	@Test
 	public static void main(String[] args) {
+    String baseUrl = "https://www.javatpoint.com/";  
+	String driverPath = "resources\\chromedriver.exe"; 
+	WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", driverPath);  
 		driver = new ChromeDriver();
 		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);  
@@ -47,6 +50,6 @@ public class AppTest
 		System.out.print(URL);  
 		String title = driver.getTitle();                  
 		System.out.println(title); 
-	}*/
+	}
 	
 }
