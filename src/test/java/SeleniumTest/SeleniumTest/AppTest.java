@@ -16,7 +16,7 @@ public class AppTest
 	String driverPath = "resources\\chromedriver.exe";  
 	public WebDriver driver ;   
 	@Test(enabled=true)           
-	public void test() {       
+	public void verifytest() {       
 	System.setProperty("webdriver.chrome.driver", driverPath);  
 	driver = new ChromeDriver();
 	//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);  
