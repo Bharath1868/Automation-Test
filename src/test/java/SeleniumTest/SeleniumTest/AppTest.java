@@ -12,11 +12,12 @@ import org.testng.annotations.Test;
 
 public class AppTest 
 {
-	public String baseUrl = "https://www.javatpoint.com/";  
-	String driverPath = "resources\\chromedriver.exe";  
-	public WebDriver driver ;   
+   
 	@Test(enabled=true)           
-	public void verifytest() {       
+	public void verifytest() {      
+	String baseUrl = "https://www.javatpoint.com/";  
+	String driverPath = "D:\TestGit\TestSelenium\TestSelenium\resources\chromedriver.exe";  
+	WebDriver driver ;
 	System.setProperty("webdriver.chrome.driver", driverPath);  
 	driver = new ChromeDriver();
 	//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);  
@@ -33,7 +34,7 @@ public class AppTest
 	}     
 	@AfterTest  
 	public void afterTest() {  
-	driver.quit();  
+	  
 	System.out.println("after test");  
 	} 
 	
