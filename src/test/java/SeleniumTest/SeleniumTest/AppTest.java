@@ -49,7 +49,7 @@ public class AppTest
 		String URL= driver.getCurrentUrl();  
 		System.out.print(URL);  
 		String title = driver.getTitle();                  
-		System.out.println(title); 
+		//System.out.println(title); 
 	}
 	
 }
