@@ -15,7 +15,7 @@ public class AppTest
 	public String baseUrl = "https://www.javatpoint.com/";  
 	String driverPath = "resources\\chromedriver.exe";  
 	public WebDriver driver ;   
-/*	@Test             
+	@Test             
 	public void test() {       
 	System.setProperty("webdriver.chrome.driver", driverPath);  
 	driver = new ChromeDriver();
@@ -35,10 +35,6 @@ public class AppTest
 	public void afterTest() {  
 	driver.quit();  
 	System.out.println("after test");  
-	}  */ 
-	@Test
-	public static void test() {
-		Reporter.log("Test started--> "+ "verifyLoginPageTitleTest" +"\n" );
-		System.out.println("Hi....");
-	}
+	}  
+	
 }
