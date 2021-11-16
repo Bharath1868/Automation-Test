@@ -14,7 +14,7 @@ public class AppTest
 {
    
 	@Test(enabled=true)           
-	public void verifytest() {      
+	public void Test() {      
 	String baseUrl = "https://www.javatpoint.com/";  
 	String driverPath = "D:\TestGit\TestSelenium\TestSelenium\resources\chromedriver.exe";  
 	WebDriver driver ;
