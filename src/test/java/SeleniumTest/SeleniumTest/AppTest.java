@@ -13,20 +13,23 @@ import org.testng.annotations.Test;
 public class AppTest 
 {
    
-	@Test           
-	public void sample() {      
-	String baseUrl = "https://www.javatpoint.com/";  
-	String driverPath = "D:\TestGit\TestSelenium\TestSelenium\resources\chromedriver.exe";  
-	WebDriver driver ;
+	public String baseUrl = "https://wac.das.myatos.net/portal/pki.jsp";  
+	String driverPath = "resources\\chromedriver.exe";  
+	public WebDriver driver ;   
+	@Test             
+	public void sample() {   
+		
 	System.setProperty("webdriver.chrome.driver", driverPath);  
-	driver = new ChromeDriver();
-	//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);  
+	 DesiredCapabilities cap = new DesiredCapabilities();
+     cap.setJavascriptEnabled(true);
+	driver = new ChromeDriver(cap);
+	 
 	driver.manage().window().maximize();  
 	driver.get(baseUrl);  
-	String URL= driver.getCurrentUrl();  
-	System.out.print(URL);  
-	String title = driver.getTitle();                  
-	System.out.println(title);  
+	driver.findElement(By.xpath("//button[text()='AUTH']")).click();
+	driver.findElement(By.name("com.siemens.dxa.applications.web.authn.challenging.username")).sendKeys("A123456");
+	driver.findElement(By.name("com.siemens.dxa.applications.web.authn.challenging.response")).sendKeys("abcde");
+	driver.findElement(By.name("com.siemens.dxa.applications.web.authn.challenging.response2")).sendKeys("123456");
 	}     
 	@BeforeTest  
 	public void beforeTest() {    
@@ -34,8 +37,8 @@ public class AppTest
 	}     
 	@AfterTest  
 	public void afterTest() {  
-	  
+	driver.quit();  
 	System.out.println("after test");  
-	} 
+	}
 	
 }
