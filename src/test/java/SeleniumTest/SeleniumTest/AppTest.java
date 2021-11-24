@@ -16,7 +16,7 @@ public class AppTest
 	public String baseUrl = "https://wac.das.myatos.net/portal/pki.jsp";  
 	String driverPath = "resources\\chromedriver.exe";  
 	public WebDriver driver ;   
-	@Test             
+	@Test(enabled=true)             
 	public void sample() {   
 		
 	System.setProperty("webdriver.chrome.driver", driverPath);  
