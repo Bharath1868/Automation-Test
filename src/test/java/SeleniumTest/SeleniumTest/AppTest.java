@@ -21,7 +21,7 @@ public class AppTest
 		
 	System.setProperty("webdriver.chrome.driver", driverPath);  
 	 DesiredCapabilities cap = new DesiredCapabilities();
-     cap.setJavascriptEnabled(true);
+         cap.setJavascriptEnabled(true);
 	driver = new ChromeDriver(cap);
 	 
 	driver.manage().window().maximize();  
